@@ -1,8 +1,7 @@
 import requests
 import time
 
-# Your website URL
-URL = "https://yourwebsite.com"
+URL = "https://fell-beast-apothecary.onrender.com"
 
 def ping_website():
     try:
@@ -14,7 +13,4 @@ def ping_website():
     except requests.exceptions.RequestException as e:
         print(f"Soooo sleepy... Dreams: {e}")
 
-# Run indefinitely, pinging every 5 minutes (300 seconds)
-while True:
-    ping_website()
-    time.sleep(900)
+ping_website()
